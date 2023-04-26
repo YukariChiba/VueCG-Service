@@ -1,4 +1,6 @@
-const JsonRecords = require('json-records');
-const db = new JsonRecords("data/db.json");
+const JsonRecords = require("json-records");
+const scene_db = new JsonRecords("data/scenes.json");
 
-module.exports = db;
+module.exports = {
+  scene: scene_db,
+};
